@@ -50,7 +50,7 @@ public class Jprat10 extends JFrame implements ActionListener {
 
 		painelMeio = new JPanel();
 		try {
-			File imagem = new File("imagem.jpeg"); // dei uma desmiu�ada no c�digo s� p/ entender melhor como funciona
+			File imagem = new File("imagem.jpeg");
 			BufferedImage minhaImagem = ImageIO.read(imagem);
 			ImageIcon icon = new ImageIcon(minhaImagem);
 			label2 = new JLabel(icon);
@@ -65,7 +65,7 @@ public class Jprat10 extends JFrame implements ActionListener {
 		ButtonGroup grupo2 = new ButtonGroup();
 		painelDireita = new JPanel();
 		painelDireita.setLayout(new BoxLayout(painelDireita, BoxLayout.Y_AXIS));
-		TitledBorder bordap5 = BorderFactory.createTitledBorder("Sa�da");
+		TitledBorder bordap5 = BorderFactory.createTitledBorder("Saida");
 		painelDireita.setBorder(bordap5);
 		rbotao4 = new JRadioButton("Celsius");
 		rbotao5 = new JRadioButton("Fahrenheit");
@@ -82,7 +82,7 @@ public class Jprat10 extends JFrame implements ActionListener {
 		painelBaixo = new JPanel();
 		botao1 = new JButton("Converter!");
 		botao2 = new JButton("Resetar");
-		label3 = new JLabel("Sa�da: ");
+		label3 = new JLabel("Saida: ");
 		ctexto2 = new JTextField(30);
 		ctexto2.setBackground(null);
 		
@@ -140,7 +140,7 @@ public class Jprat10 extends JFrame implements ActionListener {
 			if(ctexto1.getText().equals("")) {
 				ctexto2.setText(null);
 			}else {
-				ctexto2.setText("Valor inv�lido!");
+				ctexto2.setText("Valor invalido!");
 				ctexto2.setForeground(Color.red);
 			}
 		}
